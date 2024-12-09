@@ -49,4 +49,11 @@ return {
       require("ibl").setup({ indent = { highlight = highlight } })
     end,
   },
+  {
+    "ibhagwan/fzf-lua",
+    dependencies = {
+      { "ibhagwan/fzf-lua" },
+    },
+    opts = {},
+  },
 }
