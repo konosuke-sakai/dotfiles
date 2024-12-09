@@ -96,7 +96,11 @@ return {
     dependencies = {
       { "nvimdev/dashboard-nvim" },
     },
-    opts = {},
+    opts = {
+      config = {
+        project = { action = function() vim.cmd("FzfLua files") end },
+      },
+    },
   },
   {
     "akinsho/bufferline.nvim",
