@@ -26,6 +26,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
 
 		vim.keymap.set("n", "<C-d>", "<Cmd>quit<CR>", { noremap = true })
 
+		require("dashboard"):instance()
 		require("FTerm").open()
 	end,
 })
