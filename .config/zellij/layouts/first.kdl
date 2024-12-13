@@ -2,7 +2,7 @@ layout {
     pane size=1 borderless=true {
         plugin location="tab-bar"
     }
-    pane command="nvim"
+    pane command="nvim" close_on_exit=true
     pane size=1 borderless=true {
         plugin location="status-bar"
     }
