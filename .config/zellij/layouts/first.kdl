@@ -2,7 +2,9 @@ layout {
     pane size=1 borderless=true {
         plugin location="tab-bar"
     }
-    pane command="nvim" close_on_exit=true
+    pane command="nvim" close_on_exit=true {
+      args "-c" "autocmd VimEnter * lua require('dashboard'):instance() require('FTerm').open()"
+    }
     pane size=1 borderless=true {
         plugin location="status-bar"
     }
